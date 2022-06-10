@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+:root {
+  --primary-color: rgb(131, 39, 39);
+  --primary-color-darker: rgb(71, 20, 20);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 19px 1px #000;
+  text-align: justify;
+}
+.container h1 {
+  text-align: center;
+}
+
+form input, form label, form button {
+  border-radius: 10px;
+  border: 1px solid;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+form button {
+  font-size: 12px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #c42323;
+  box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.botoes {
+  display: flex;
+  justify-content:center;
+}
+.botoes button {
+  width: 250px;
+  margin: 10px
+}
+.background-invalido {
+  background-color: rgb(248, 106, 106);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 1s;
+}
+.background-valido {
+  background-color: rgb(106, 248, 141);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.resultado {
+  transition: all 2s;
+}
